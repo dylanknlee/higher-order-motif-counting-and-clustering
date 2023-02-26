@@ -1,6 +1,6 @@
 title: Higher-Order Motif Counting and Clustering
 description: This site serves as the webpage for our group's (Dylan Lee, Jonathan Li, Karthikeya Manchala, Matthew Wilson) project.
-github_username:  jekyll
+github_username:  dylanknlee
 
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
