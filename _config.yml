@@ -1,7 +1,8 @@
 title: Higher-Order Motif Counting and Clustering
-description: Authored by Dylan Lee, Jonathan Li, Karthikeya Manchala, and Matthew Wilson under the advisory of Barna Saha
+description: By Dylan Lee, Jonathan Li, Karthikeya Manchala, and Matthew Wilson under the advisory of Barna Saha
 github_username:  dylanknlee
-
+logo: /assets/logo.png
+show_downloads: true
 # Build settings
 remote_theme: pages-themes/minimal@v0.2.0
 gem "github-pages", group: :jekyll_plugins
