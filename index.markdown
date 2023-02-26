@@ -15,9 +15,23 @@ Shown below is a collection of all the observed motifs analyzed for this project
 
 ![Motifs](assets/motifs.png)
 
-_But why would we want to utilize motifs instead of nodes?_
+_**But why would we want to utilize motifs instead of nodes?**_
+
+Depending on the domain of inquiry, certain motifs can emerge to become signficantly relevant in certain contexts. For instance, the first seven
+motifs are prevalent in social network analysis, while wedges such as the last five motifs are used when studying patterns in air traffic between 
+cities. 
+
+Often times, we want to cluster networks to classify nodes into distinct sub-communities to either understand key characteristics about certain 
+categories of data, or to help make future predictions regarding unseen data in the future. While much scientific inquiry has been done about 
+clustering networks both accurately and efficiently on the level of nodes, little investigation has been done regarding clustering on a higher-order 
+level of motifs, which is the primary motivation behind this project.
+
+In exploring higher-order clustering of networks on the motif level, we hope that this endeavor could deepen and enrich pre-existing analyses for any 
+domain that employs the usage of graphs.
 
 # Motif Counting
+
+A preliminary step we must take before performing motif clustering is to count the number of occurrences of a desired motif in the given network.
 
 # Spectral Clustering Algorithms
 
@@ -30,3 +44,17 @@ _But why would we want to utilize motifs instead of nodes?_
 # Results and Conclusions
 
 _In progress! :)_
+
+## References
+
+_**Higher order orginazation of complex networks**_ \\
+Austin R. Benson, David F. Gleich, and Jure Leskovec (July 7, 2016)
+
+_**Supplementary Materials for Higher-order organization of complex networks**_ \\
+Austin R. Benson, David F. Gleich, and Jure Leskovec (July 1, 2016)
+
+## Acknowledgments
+
+We would like to thank _**Barna Saha**_ for her mentorship and advisory throughout our endeavor, _**Suraj Rampure**_ for
+overseeing all the administrative and logistical overhead, and finally the _**Halıcıoğlu Data Science Institute**_ in making this 
+project possible.
