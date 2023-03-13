@@ -41,7 +41,9 @@ A preliminary step we must take before performing motif clustering is to count t
 
 # Network Sampling
 
-# Results and Conclusions
+# Results 
+
+# Conclusions
 
 _In progress! :)_
 
