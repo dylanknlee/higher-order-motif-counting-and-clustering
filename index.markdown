@@ -33,6 +33,35 @@ domain that employs the usage of graphs.
 
 A preliminary step we must take before performing motif clustering is to count the number of occurrences of a desired motif in the given network.
 
+For this process, we'll utilize two data structures created while pre-processing the raw network dataset: an adjacency list for every node, which
+stores all the other nodes it has an edge pointing towards (named _**adj_list_away**_), and similarly another adjacency list for each node which
+stores all the edges that begin with other nodes and point towards it (named _**adj_list_in**_).
+
+We then employ the following naive counting algorithm, whose general form is presented here in pseudocode:
+
+```ruby
+1.) Iterate through each vertex v1 in adj_list_away
+2.) Iterate through each vertex v2 which v1 points to 
+    in adj_list_away
+3.) Iterate through each vertex v3 which v2 points to 
+    in adj_list_away
+4.) Check that the number and directions of the iterated
+    edges match that of the desired motif
+5.) If so, record the edges amongst (v1, v2, v3) as an
+    observed instance of the motif       
+```
+As shown above, our counting method maintains a computation time complexity of O(n^3) by naively iterating through each possible path of node triples
+in the network to check for any observed instance of the desired motif, which we aim to improve upon with our sampling method. Depending on the domain
+of context for any given network, certain motifs will be more prevalent than others in terms of the frequency of occurrence. For example, the 
+number of recorded instances for each of the 13 motifs is displayed below for a network of North American city reachability by airline travel.
+
+![Motifs Counts](assets/city_motif_counts.png)
+
+Motif counting will ultimately act as the bottleneck in our entire pipeline to process and cluster any given network as the most time-consuming step,
+so later on we'll introduce sampling techniques that will obtain a sparser subset of the graph to speed up counting while still providing a fairly 
+accurate estimate of the optimal cluster we would obtain with the entire network. But for now, let's move on to discussing the algorithms we've used
+to perform spectral clustering based on motif occurrences.
+
 # Spectral Clustering Algorithms
 
 ## Algorithm 1
