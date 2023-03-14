@@ -135,7 +135,7 @@ because it only has 4 edges, which is fewer than the threshold, then all of its 
 
 To gauge the effectiveness of our sampling algorithm with respect to the execution time and preserved accuracy of our motif counting and clustering pipeline, the accuracy of numerous clusters were measured from various datasets for multiple parameter combinations between the choice of motif and the value of threshold _**k**_. To examine the effects of raising the sampling threshold, we first started with the network of city reachability via airline travel introduced earlier, and calculated the accuracy of clusters computed after sampling at increasing intervals for _**k**_. These results are displayed in the following table and visualization:
 
-![lineplot](assets/line_plot.png)
+![lineplot](assets/line_plot.PNG)
 
 | Threshold  | Accuracy | Speedup |
 |:-----------|:---------|:--------|
