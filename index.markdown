@@ -87,7 +87,7 @@ For a more in-depth discussion of this algorithm and its derivation, see page 5 
 ## Algorithm 2
 
 The second algorithm operates in a very similar fashion to the first by taking in a motif adjacency matrix as an input.
-However, unlike the first, this algorithm also takes in another parameter k, and returns k clusters instead of just a
+However, unlike the first, this algorithm also takes in another parameter **k**, and returns **k** clusters instead of just a
 single one. The caviat however, is that this algorithm isn't backed by the same theoretical guarantees of the Cheeger Inequality 
 for obtaining clusters with near optimal motif conductance.
 
